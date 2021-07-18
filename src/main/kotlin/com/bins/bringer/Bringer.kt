@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin
 class Bringer : JavaPlugin() {
     private val configs = arrayOf(EvtJoin(), EvtResource())
     override fun onEnable() {
+        saveDefaultConfig()
         instance = this
         getCommand("reload-bringer")?.apply {
             setExecutor(com.bins.bringer.call.commands.reloadConfig())
@@ -25,8 +26,6 @@ class Bringer : JavaPlugin() {
             get() = instance.config.getBoolean("enable")
         val url: String?
             get() = instance.config.getString("url")
-        val hash: String?
-            get() = instance.config.getString("hash")
 
     }
 }

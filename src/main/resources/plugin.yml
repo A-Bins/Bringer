@@ -1,5 +1,5 @@
 name: Bringer
-version: @version@
+version: 1.0
 main: com.bins.bringer.Bringer
 api-version: 1.17
 depend: [ Kotlin ]
