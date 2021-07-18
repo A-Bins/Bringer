@@ -21,6 +21,7 @@ repositories {
 }
 
 dependencies {
+    compileOnly ("org.spigotmc:spigot:1.17-R0.1-SNAPSHOT")
     implementation ("org.jetbrains.kotlin:kotlin-stdlib")
     compileOnly("io.papermc.paper:paper-api:1.17-R0.1-SNAPSHOT")
 }

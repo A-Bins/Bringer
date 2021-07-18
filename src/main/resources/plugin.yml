@@ -4,3 +4,5 @@ main: com.bins.bringer.Bringer
 api-version: 1.17
 depend: [ Kotlin ]
 authors: [ A_bins ]
+commands:
+  reload-bringer:
